@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    influxdb:
+        ports:
+            - '8086:8086'
+        volumes:
+            - ${HOME}/.home/influxdb/config.yml:/etc/influxdb2/config.yml
+        image: 'influxdb:2.3.0'
+        restart: unless-stopped

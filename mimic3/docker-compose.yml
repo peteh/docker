@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mimic3:
+#    build: .
+    image: mycroftai/mimic3
+    container_name: mimic3
+#    command: mimic3-server 
+    volumes:
+      - ${HOME}/.home/mimic3:/home/mimic3/.local/share/mycroft/mimic3
+    ports:
+      - "59125:59125"
+    restart: always
+

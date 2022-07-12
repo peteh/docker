@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    node-red:
+        ports:
+            - '1880:1880'
+        volumes:
+            - ${HOME}/.home/node-red:/data
+        restart: unless-stopped
+        environment:
+            - TZ=Europe/Berlin
+        container_name: mynodered
+#        image: nodered/node-red
+        build: 
+           context: .
+           dockerfile: Dockerfile
