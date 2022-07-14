@@ -1,2 +1,2 @@
 rsync -avPp /dir/config/is/in/ newcomputername:/dir/donfig/is/in
-rsync -avPp ~/.config/node-red/ ~/.home/node-red/
+rsync -avPp ~/.config/motioneye/ ~/.home/motioneye/
