@@ -9,5 +9,5 @@ services:
       - ${HOME}/.home/mimic3:/home/mimic3/.local/share/mycroft/mimic3
     ports:
       - "59125:59125"
-    restart: always
+    restart: unless-stopped
 
