@@ -2,5 +2,5 @@ version: '3.3'
 services:
     rhasspy:
         volumes:
-            - ${HOME}/Programming/rhasspy-server-hermes:/usr/lib/rhasspy/rhasspy-server-server-hermes
+            - ${HOME}/Programming/rhasspy-server-hermes:/usr/lib/rhasspy/rhasspy-server-hermes
 
