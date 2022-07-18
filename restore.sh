@@ -1,1 +1,1 @@
-rsync -avPp ./backup pete@homeassistant.local:/home/pi/.home/ --rsync-path="sudo rsync"
+rsync -avPp ./backup/ pete@homeassistant.local:/home/pete/.home/ --rsync-path="sudo rsync"

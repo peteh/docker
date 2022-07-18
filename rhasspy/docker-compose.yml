@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    rhasspy:
+        ports:
+            - '12101:12101'
+        container_name: rhasspy
+        restart: unless-stopped
+        volumes:
+            - '{$HOME}/.home/rhasspy/profiles:/profiles'
+            - '/etc/localtime:/etc/localtime:ro'
+        devices:
+            - '/dev/snd:/dev/snd'
+        image: rhasspy/rhasspy
