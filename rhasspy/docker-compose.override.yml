@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+    rhasspy:
+        volumes:
+            - ${HOME}/Programming/rhasspyserver_hermes:/usr/lib/rhasspy/rhasspy-server-server-hermes
+
